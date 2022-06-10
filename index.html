@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparrow News</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Styles/Style.css">
+
+</head>
+<body class="text-light">
+  <header class="p-2 text-center">
+    <h1>Sparrow News</h1>
+  </header>
+  <div class="border-top border-light p-0 m-0" style="background-color:rgb(22,22,22);">
+    <div class="d-md-flex align-items-center flex-md-row flex-column d-none ms-5">
+        <ul class="p-0 m-0">
+            <a class="text-light" href="#"><li class="list-unstyled d-inline-block ms-3 p-3">Notícias</li></a>
+            <a class="text-light" href="#"><li class="list-unstyled d-inline-block ms-3 p-3">Contato</li></a>
+            <a class="text-light" data-bs-toggle="dropdown" data-bs-target="#ddm" href="#"><li class="list-unstyled d-inline-block ms-3 p-3">Dicas</li></a>
+            <div class="dropdown-menu dropdown-menu" id="ddm">
+                <p class="dropdown-item cursor-pointer">League of legends</p>
+                <p class="dropdown-item">CS GO</p>
+            </div>
+        </ul>
+    </div>
+    <div class="d-md-none text-center m-0 p-0" >
+        <button class="btn btn-dark w-100  border-none" data-bs-toggle="collapse" data-bs-target="#menu-mbl">
+            Menu
+        </button>
+        <div id="menu-mbl" class="collapse">
+            <div class=" d-flex flex-column ">
+                <a href="notícias" class="text-light"><p class=" p-3 m-0">Notícias</p></a>
+                <a href="contato" class="text-light" ><p class=" p-3 m-0">Contato</p></a>
+                <a href="#dicas-lol" class="text-light"><p class=" p-3 m-0">Dicas</p></a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+     
+
+</body>
+
+</html>
