@@ -6,8 +6,30 @@ header{
     background-color: rgb(20, 20, 40);
 }
 
+p{
+    margin-bottom: 0;
+}
 
-header + div > div li:hover{
+header + div > div a:hover{
     background-color: black;
     cursor:pointer;
 }
+
+
+.nav-item:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.nav-item button{
+    background-color: transparent;
+    border: none;
+}
+
+#teste{
+    position: relative;
+    top: -25px;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+
