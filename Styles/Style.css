@@ -12,6 +12,14 @@ body{
     background-color: rgb(225, 225, 225);
 }
 
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(225, 225, 225);
+    border:solid 0.5px black
+}
+body::-webkit-scrollbar{
+    background-color: black;
+}
+
 header{
     background-color: rgb(20, 20, 40);
     padding: 20px;
@@ -19,6 +27,7 @@ header{
 nav{
     background-color: rgb(22, 22, 22);
     user-select:none;
+    font-family: monospace;
 }
 nav ul li{
     display: inline-block;
@@ -36,7 +45,7 @@ menu{
     padding: 10px 0;
     position: absolute;
     margin:2px;
-    border-radius:0 5px 5px 5px;
+    border-radius: 0px 10px 10px 10px;
     opacity: 0;
     transition: all 500ms;
 }
@@ -47,4 +56,36 @@ menu ul li{
 menu ul li:hover{
     background-color: black;
     cursor: pointer;
+}
+
+#news{
+    margin-top: 100px;
+    background-color: rgb(22, 22, 22);
+    text-align: center;
+    height: auto;
+    overflow: hidden;
+    padding: 50px 0px;
+}
+#news h2{
+    margin: 0px 20px 50px 20px;
+}
+#newsContainer{
+
+    display: flex;
+    height: auto;
+    column-gap: 20px;
+}
+.newsContent{
+    padding: 30px 0;
+    /* padding: 10px; */
+    font-size: calc(0.4em + 1vw);
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+}
+.newsContent p{
+    width: 70%;
+    display: inline-block;
+    text-decoration:underline;
+    color: rgb(225, 225, 225);
 }
