@@ -1,35 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
 body{
-    
+    height: 1200px;
+    color: white;
+    font-family: Arial, Helvetica,;
+    background-color: rgb(225, 225, 225);
 }
 
 header{
     background-color: rgb(20, 20, 40);
+    padding: 20px;
 }
-
-p{
-    margin-bottom: 0;
+nav{
+    background-color: rgb(22, 22, 22);
+    user-select:none;
 }
+nav ul li{
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px 20px;
 
-header + div > div a:hover{
-    background-color: black;
-    cursor:pointer;
 }
-
-
-.nav-item:hover{
+nav ul li:hover{
+   background-color: black;
+   cursor: pointer;
+}
+menu{
+    background-color: rgb(22, 22, 22);
+    display: none;
+    padding: 10px 0;
+    position: absolute;
+    margin:2px;
+    border-radius:0 5px 5px 5px;
+    opacity: 0;
+    transition: all 500ms;
+}
+menu ul li{
+    list-style: none;
+    padding: 10px;
+}
+menu ul li:hover{
     background-color: black;
     cursor: pointer;
 }
-.nav-item button{
-    background-color: transparent;
-    border: none;
-}
-
-#teste{
-    position: relative;
-    top: -25px;
-    background-color: black;
-    padding: 10px 20px;
-}
-
-
