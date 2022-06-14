@@ -34,11 +34,9 @@ function dropdownVerification(e,distTop,distLeft){
         e.style.top = distTop+"px"
         e.style.left = distLeft+"px"
         e.style.display = "inline-block"
-        e.style.opacity = "1"
     }else{
         e.dataset.open = "close"
         e.style.display = "none"
-        e.style.opacity = "0"
     }
 
 }
