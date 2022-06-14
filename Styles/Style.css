@@ -126,11 +126,12 @@ menu ul li:hover {
   height: 100%;
   margin-top: 100px;
   border-radius: 50px 50px 0px 0px;
-  height: 600px;
+  height: auto;
   display: flex;
   background-color: black;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
 }
 #newsContent {
@@ -147,4 +148,34 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media screen and (max-width:520px){
+    #latest-newsContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .latest-newsContent{
+        font-size: 16px;
+    }
+    menu{
+        background-color: rgb(20, 20, 40);
+    }
+    .news{
+        width:100%;
+        margin: 0;
+        flex-direction: column;
+        text-align: justify;
+    }
+    .news a{
+        width: 100%;
+    }
+    .news img{
+        width: 100%;
+    }
+    #iframeContainer{
+        background-color: red;
+    }
+    #iframeContainer iframe{
+        width: 200px;
+    }
 }
