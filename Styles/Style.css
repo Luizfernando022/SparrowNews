@@ -80,8 +80,10 @@ menu ul li:hover {
 .latest-newsContent p {
   width: 70%;
   display: inline-block;
-  text-decoration: underline;
   color: rgb(225, 225, 225);
+}
+.latest-newsContent p:hover{
+    text-decoration: underline;
 }
 #news {
   margin-top: 100px;
