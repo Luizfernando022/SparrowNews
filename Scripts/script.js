@@ -1,3 +1,17 @@
+const firebaseConfig = {
+    apiKey: "AIzaSyDpIGNnBS8FjVbqNS3DcChZTP1uJb4gTIw",
+    authDomain: "games-news-1d8ab.firebaseapp.com",
+    projectId: "games-news-1d8ab",
+    storageBucket: "games-news-1d8ab.appspot.com",
+    messagingSenderId: "164881794730",
+    appId: "1:164881794730:web:775c11fccdb0557d8a72d3"
+  };
+
+  let app = initializeApp(firebaseConfig)
+
+  let db = app.firetore()
+
+
 let li = document.querySelectorAll('li')[2]
 let body = document.getElementsByTagName('body')[0]
 let menu = document.getElementsByTagName('menu')[0]
